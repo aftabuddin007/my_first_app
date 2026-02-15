@@ -22,10 +22,44 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Home Page"),
+        title: Text("Home Page",),
         centerTitle: true,
         backgroundColor: Colors.green,
       ),
-    );
+      // body: Column(
+      //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      //   children: [
+      //     Text("this is column ",style: TextStyle(
+      //     fontSize: 25,
+      //     color: Colors.blue,
+      //     fontWeight: FontWeight.bold
+      //   )),
+      //     Text("this is column ",style: TextStyle(
+      //     fontSize: 25,
+      //     color: Colors.blue
+      //   )),
+      //     Text("this is column ",style: TextStyle(
+      //     fontSize: 25,
+      //     color: Colors.blue
+      //   )),
+      //     Text("this is column ",style: TextStyle(
+      //     fontSize: 25,
+      //     color: Colors.blue
+      //   )),
+      //   ],
+      // )
+      body: SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        child:Row(
+        children: [
+          Text("This is row",style: TextStyle(fontSize: 25),),
+          Text("This is row",style: TextStyle(fontSize: 25),),
+          Text("This is row",style: TextStyle(fontSize: 25),),
+          Text("This is row",style: TextStyle(fontSize: 25),),
+          Text("This is row",style: TextStyle(fontSize: 25),),
+          Text("This is row",style: TextStyle(fontSize: 25),),
+        ],
+      ),
+    ));
   }
 }
