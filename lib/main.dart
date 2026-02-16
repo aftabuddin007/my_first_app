@@ -52,11 +52,29 @@ class Home extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         child:Row(
         children: [
+Icon(Icons.access_alarm,size: 50,color: Colors.red,),
+ IconButton(onPressed: (){}, icon: Icon(Icons.account_circle_outlined)),
+          Text("This is row",style: TextStyle(fontSize: 25),
+          ),
+          SizedBox(
+            width: 100,
+          ),
           Text("This is row",style: TextStyle(fontSize: 25),),
+          SizedBox(
+            width: 100,
+          ),
           Text("This is row",style: TextStyle(fontSize: 25),),
+          SizedBox(
+            width: 100,
+          ),
           Text("This is row",style: TextStyle(fontSize: 25),),
+          SizedBox(
+            width: 100,
+          ),
           Text("This is row",style: TextStyle(fontSize: 25),),
-          Text("This is row",style: TextStyle(fontSize: 25),),
+          SizedBox(
+            width: 100,
+          ),
           Text("This is row",style: TextStyle(fontSize: 25),),
         ],
       ),
