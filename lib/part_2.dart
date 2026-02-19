@@ -69,10 +69,18 @@ class part2 extends StatelessWidget {
         Padding( 
           padding: EdgeInsets.only(left: 8),
         child:  TextField(
-          
-          obscureText: true,
+          keyboardType:TextInputType.phone ,
+          // obscureText: true,
           decoration: InputDecoration(
-            hintText: "Enter your name",
+
+            hintText: "Enter your number",
+            labelText: 'phone number',
+            prefixIcon: Icon(Icons.phone),
+            suffixIcon: Icon(Icons.remove_red_eye),
+           labelStyle: TextStyle(
+            color: Colors.red,
+
+           ),
             border: OutlineInputBorder(
 
             )
