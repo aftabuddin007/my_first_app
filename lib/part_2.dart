@@ -69,15 +69,28 @@ class part2 extends StatelessWidget {
           width: 200,
           height: 200,
           color: Colors.amberAccent,
-          child:Center(
-          child: Text('this is container',
+          child:Column(
+          children:[ 
+            Text('this is container',
+          style:TextStyle(
+            fontSize: 20,
+            color: Colors.black
+          )
+          ),
+            Text('this is container',
+          style:TextStyle(
+            fontSize: 20,
+            color: Colors.black
+          )
+          ),
+            Text('this is container',
           style:TextStyle(
             fontSize: 20,
             color: Colors.black
           )
           ),
           
-          ),
+          ]),
          )
 
 
