@@ -90,11 +90,21 @@ class part2 extends StatelessWidget {
                     print("please enter your phone number");
                   } else if (phoneControler.text.length < 11) {
                     print("please enter the 11 digit fully");
+                  } else {
+                    print("valid number");
+                    phoneControler.clear();
+
                   }
                   print(phoneControler.text);
                 },
                 child: Text("Submit"),
               ),
+              SizedBox(
+                height: 20,
+              ),
+              ElevatedButton(onPressed: (){
+                phoneControler.clear();
+              }, child: Text("clear")),
               Container(
                 alignment: Alignment.center,
                 margin: EdgeInsets.only(top: 50),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_first_app/form_login.dart';
 import 'package:my_first_app/part_2.dart';
 
 void main() {
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: "Aftab", home: part2());
+    return MaterialApp(title: "Aftab", home: LoginPage());
   }
 }
 
