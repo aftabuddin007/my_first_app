@@ -23,6 +23,7 @@ class LoginPage extends StatelessWidget {
               Text("Login with your phone number & password"),
               SizedBox(height: 20),
               Form(
+                key: _formKey,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
@@ -65,9 +66,18 @@ class LoginPage extends StatelessWidget {
                     SizedBox(height: 20),
                     SizedBox(
                       width: 300,
+
                       child: ElevatedButton(
-                        onPressed: () {},
-                        child: Text("Submit"),
+                        onPressed: () {
+                          if (_formKey.currentState!.validate()) {
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(content: Text("Login Successful")),
+                            );
+
+                            // print("Login Successfully");
+                          }
+                        },
+                        child: Text("Login"),
                       ),
                     ),
                   ],
