@@ -20,6 +20,8 @@ class LoginPage extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
+              Image.network("https://i.ibb.co.com/PsGbnmH3/51z5-It-EXp-BL-AC-UF894-1000-QL80.jpg",height: 250,width: 250,)
+              ,
               Text("Login with your phone number & password"),
               SizedBox(height: 20),
               Form(
