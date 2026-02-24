@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_first_app/home.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -20,9 +21,12 @@ class LoginPage extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Image.asset("assets/download.png",height: 100,width: 100,),
-              Image.network("https://i.ibb.co.com/PsGbnmH3/51z5-It-EXp-BL-AC-UF894-1000-QL80.jpg",height: 250,width: 250,)
-              ,
+              Image.asset("asset/download.png", height: 100, width: 100),
+              Image.network(
+                "https://i.ibb.co.com/PsGbnmH3/51z5-It-EXp-BL-AC-UF894-1000-QL80.jpg",
+                height: 250,
+                width: 250,
+              ),
               Text("Login with your phone number & password"),
               SizedBox(height: 20),
               Form(
@@ -79,6 +83,10 @@ class LoginPage extends StatelessWidget {
 
                             // print("Login Successfully");
                           }
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Home()),
+                          );
                         },
                         child: Text("Login"),
                       ),
