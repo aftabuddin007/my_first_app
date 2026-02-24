@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_first_app/listView.dart';
 
 class About extends StatelessWidget {
   final String name;
@@ -13,10 +14,35 @@ class About extends StatelessWidget {
         backgroundColor: Colors.green,
       ),
 
-      body: Center(child: Text(name,style: TextStyle(
-        fontSize: 25,
-        color: Colors.deepOrange
-      ),)),
+     body: Column(
+  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+  children: [
+    Center(
+      child: Text(
+        name,
+        style: TextStyle(
+          fontSize: 25,
+          color: Colors.deepOrange,
+        ),
+      ),
+    ),
+
+    Padding(
+      padding: const EdgeInsets.all(20),
+      child: ElevatedButton(
+        onPressed: () {
+          Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => const ListView2(),
+      ),
+    );
+        },
+        child: Text("Continue"),
+      ),
+    ),
+  ],
+),
     );
   }
 }

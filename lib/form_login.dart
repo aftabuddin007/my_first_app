@@ -85,7 +85,7 @@ class LoginPage extends StatelessWidget {
                           }
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => About(name: "Sakib",)),
+                            MaterialPageRoute(builder: (context) => About(name: phoneController.text,)),
                           );
                         },
                         child: Text("Login"),
