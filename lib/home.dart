@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_first_app/gird.dart';
 import 'package:my_first_app/listView.dart';
 
 class About extends StatelessWidget {
@@ -29,7 +30,10 @@ class About extends StatelessWidget {
 
     Padding(
       padding: const EdgeInsets.all(20),
-      child: ElevatedButton(
+      child: Column(
+        children: [
+      
+      ElevatedButton(
         onPressed: () {
           Navigator.push(
       context,
@@ -40,7 +44,19 @@ class About extends StatelessWidget {
         },
         child: Text("Continue"),
       ),
-    ),
+
+      ElevatedButton(
+        onPressed: () {
+          Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => const GirdView1(),
+      ),
+    );
+        },
+        child: Text("grid"),
+      ),
+   ] ),)
   ],
 ),
     );
